@@ -1,0 +1,10 @@
+C:\Users\UNIQUE\source\repos\stopWatch-CSharp\bin\Debug\stopWatch-CSharp.exe.config
+C:\Users\UNIQUE\source\repos\stopWatch-CSharp\bin\Debug\stopWatch-CSharp.exe
+C:\Users\UNIQUE\source\repos\stopWatch-CSharp\bin\Debug\stopWatch-CSharp.pdb
+C:\Users\UNIQUE\source\repos\stopWatch-CSharp\obj\Debug\stopWatch-CSharp.csprojAssemblyReference.cache
+C:\Users\UNIQUE\source\repos\stopWatch-CSharp\obj\Debug\stopWatch_CSharp.Form1.resources
+C:\Users\UNIQUE\source\repos\stopWatch-CSharp\obj\Debug\stopWatch_CSharp.Properties.Resources.resources
+C:\Users\UNIQUE\source\repos\stopWatch-CSharp\obj\Debug\stopWatch-CSharp.csproj.GenerateResource.cache
+C:\Users\UNIQUE\source\repos\stopWatch-CSharp\obj\Debug\stopWatch-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\UNIQUE\source\repos\stopWatch-CSharp\obj\Debug\stopWatch-CSharp.exe
+C:\Users\UNIQUE\source\repos\stopWatch-CSharp\obj\Debug\stopWatch-CSharp.pdb
