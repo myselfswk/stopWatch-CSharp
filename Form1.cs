@@ -93,6 +93,7 @@ namespace stopWatch_CSharp
             timer1.Stop();
         }
 
+        //I create setting as set time
         private void btnSetTime_Click(object sender, EventArgs e)
         {
             if (displaySetTimePanel)
@@ -117,9 +118,36 @@ namespace stopWatch_CSharp
             {
                 MessageBox.Show("Please, Fill Minutes");
             }
+            else if (Convert.ToInt32(txtSetMinutes.Text) > 60)
+            {
+                hours = Convert.ToInt32(txtSetHours.Text);
+                minutes = 60;
+                seconds = Convert.ToInt32(txtSetSeconds.Text);
+
+                lblHours.Text = change(hours);
+                lblMinutes.Text = change(minutes);
+                lblSeconds.Text = change(seconds);
+
+                if (Convert.ToInt32(txtSetSeconds.Text) > 60)
+                {
+                    seconds = 60;
+
+                    lblSeconds.Text = change(seconds);
+                }
+            }
             else if (txtSetSeconds.Text == "")
             {
                 MessageBox.Show("Please, Fill Seconds");
+            }
+            else if (Convert.ToInt32(txtSetSeconds.Text) > 60)
+            {
+                hours = Convert.ToInt32(txtSetHours.Text);
+                minutes = Convert.ToInt32(txtSetMinutes.Text);
+                seconds = 60;
+
+                lblHours.Text = change(hours);
+                lblMinutes.Text = change(minutes);
+                lblSeconds.Text = change(seconds);
             }
             else
             {

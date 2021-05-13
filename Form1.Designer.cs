@@ -42,13 +42,13 @@ namespace stopWatch_CSharp
             this.label3 = new System.Windows.Forms.Label();
             this.btnSetTime = new System.Windows.Forms.Button();
             this.setTimePanel = new System.Windows.Forms.Panel();
-            this.lblSetHours = new System.Windows.Forms.Label();
-            this.txtSetHours = new System.Windows.Forms.TextBox();
-            this.lblSetMinutes = new System.Windows.Forms.Label();
+            this.btnApply = new System.Windows.Forms.Button();
+            this.txtSetSeconds = new System.Windows.Forms.TextBox();
             this.txtSetMinutes = new System.Windows.Forms.TextBox();
             this.lblSetSeconds = new System.Windows.Forms.Label();
-            this.txtSetSeconds = new System.Windows.Forms.TextBox();
-            this.btnApply = new System.Windows.Forms.Button();
+            this.lblSetMinutes = new System.Windows.Forms.Label();
+            this.txtSetHours = new System.Windows.Forms.TextBox();
+            this.lblSetHours = new System.Windows.Forms.Label();
             this.setTimePanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -162,7 +162,7 @@ namespace stopWatch_CSharp
             // 
             this.btnSetTime.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSetTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSetTime.Location = new System.Drawing.Point(608, 38);
+            this.btnSetTime.Location = new System.Drawing.Point(735, 48);
             this.btnSetTime.Name = "btnSetTime";
             this.btnSetTime.Size = new System.Drawing.Size(254, 93);
             this.btnSetTime.TabIndex = 3;
@@ -180,40 +180,32 @@ namespace stopWatch_CSharp
             this.setTimePanel.Controls.Add(this.lblSetMinutes);
             this.setTimePanel.Controls.Add(this.txtSetHours);
             this.setTimePanel.Controls.Add(this.lblSetHours);
-            this.setTimePanel.Location = new System.Drawing.Point(608, 136);
+            this.setTimePanel.Location = new System.Drawing.Point(735, 146);
             this.setTimePanel.Name = "setTimePanel";
             this.setTimePanel.Size = new System.Drawing.Size(254, 306);
             this.setTimePanel.TabIndex = 4;
             this.setTimePanel.Visible = false;
             // 
-            // lblSetHours
+            // btnApply
             // 
-            this.lblSetHours.AutoSize = true;
-            this.lblSetHours.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSetHours.Location = new System.Drawing.Point(3, 10);
-            this.lblSetHours.Name = "lblSetHours";
-            this.lblSetHours.Size = new System.Drawing.Size(120, 39);
-            this.lblSetHours.TabIndex = 0;
-            this.lblSetHours.Text = "Hours:";
+            this.btnApply.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnApply.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApply.Location = new System.Drawing.Point(153, 205);
+            this.btnApply.Name = "btnApply";
+            this.btnApply.Size = new System.Drawing.Size(94, 39);
+            this.btnApply.TabIndex = 2;
+            this.btnApply.Text = "Apply";
+            this.btnApply.UseVisualStyleBackColor = true;
+            this.btnApply.Click += new System.EventHandler(this.btnApply_Click);
             // 
-            // txtSetHours
+            // txtSetSeconds
             // 
-            this.txtSetHours.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSetHours.Location = new System.Drawing.Point(176, 7);
-            this.txtSetHours.MaxLength = 2;
-            this.txtSetHours.Name = "txtSetHours";
-            this.txtSetHours.Size = new System.Drawing.Size(71, 47);
-            this.txtSetHours.TabIndex = 1;
-            // 
-            // lblSetMinutes
-            // 
-            this.lblSetMinutes.AutoSize = true;
-            this.lblSetMinutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSetMinutes.Location = new System.Drawing.Point(3, 72);
-            this.lblSetMinutes.Name = "lblSetMinutes";
-            this.lblSetMinutes.Size = new System.Drawing.Size(149, 39);
-            this.lblSetMinutes.TabIndex = 0;
-            this.lblSetMinutes.Text = "Minutes:";
+            this.txtSetSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSetSeconds.Location = new System.Drawing.Point(176, 132);
+            this.txtSetSeconds.MaxLength = 2;
+            this.txtSetSeconds.Name = "txtSetSeconds";
+            this.txtSetSeconds.Size = new System.Drawing.Size(71, 47);
+            this.txtSetSeconds.TabIndex = 1;
             // 
             // txtSetMinutes
             // 
@@ -234,32 +226,40 @@ namespace stopWatch_CSharp
             this.lblSetSeconds.TabIndex = 0;
             this.lblSetSeconds.Text = "Seconds:";
             // 
-            // txtSetSeconds
+            // lblSetMinutes
             // 
-            this.txtSetSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSetSeconds.Location = new System.Drawing.Point(176, 132);
-            this.txtSetSeconds.MaxLength = 2;
-            this.txtSetSeconds.Name = "txtSetSeconds";
-            this.txtSetSeconds.Size = new System.Drawing.Size(71, 47);
-            this.txtSetSeconds.TabIndex = 1;
+            this.lblSetMinutes.AutoSize = true;
+            this.lblSetMinutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSetMinutes.Location = new System.Drawing.Point(3, 72);
+            this.lblSetMinutes.Name = "lblSetMinutes";
+            this.lblSetMinutes.Size = new System.Drawing.Size(149, 39);
+            this.lblSetMinutes.TabIndex = 0;
+            this.lblSetMinutes.Text = "Minutes:";
             // 
-            // btnApply
+            // txtSetHours
             // 
-            this.btnApply.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnApply.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnApply.Location = new System.Drawing.Point(153, 205);
-            this.btnApply.Name = "btnApply";
-            this.btnApply.Size = new System.Drawing.Size(94, 39);
-            this.btnApply.TabIndex = 2;
-            this.btnApply.Text = "Apply";
-            this.btnApply.UseVisualStyleBackColor = true;
-            this.btnApply.Click += new System.EventHandler(this.btnApply_Click);
+            this.txtSetHours.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSetHours.Location = new System.Drawing.Point(176, 7);
+            this.txtSetHours.MaxLength = 2;
+            this.txtSetHours.Name = "txtSetHours";
+            this.txtSetHours.Size = new System.Drawing.Size(71, 47);
+            this.txtSetHours.TabIndex = 1;
+            // 
+            // lblSetHours
+            // 
+            this.lblSetHours.AutoSize = true;
+            this.lblSetHours.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSetHours.Location = new System.Drawing.Point(3, 10);
+            this.lblSetHours.Name = "lblSetHours";
+            this.lblSetHours.Size = new System.Drawing.Size(120, 39);
+            this.lblSetHours.TabIndex = 0;
+            this.lblSetHours.Text = "Hours:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(874, 479);
+            this.ClientSize = new System.Drawing.Size(1010, 566);
             this.Controls.Add(this.setTimePanel);
             this.Controls.Add(this.btnSetTime);
             this.Controls.Add(this.btnStop);

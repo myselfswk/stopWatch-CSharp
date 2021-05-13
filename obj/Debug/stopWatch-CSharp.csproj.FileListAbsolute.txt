@@ -8,3 +8,13 @@ C:\Users\UNIQUE\source\repos\stopWatch-CSharp\obj\Debug\stopWatch-CSharp.csproj.
 C:\Users\UNIQUE\source\repos\stopWatch-CSharp\obj\Debug\stopWatch-CSharp.csproj.CoreCompileInputs.cache
 C:\Users\UNIQUE\source\repos\stopWatch-CSharp\obj\Debug\stopWatch-CSharp.exe
 C:\Users\UNIQUE\source\repos\stopWatch-CSharp\obj\Debug\stopWatch-CSharp.pdb
+F:\VPL Assignments\stopWatch-CSharp\bin\Debug\stopWatch-CSharp.exe.config
+F:\VPL Assignments\stopWatch-CSharp\bin\Debug\stopWatch-CSharp.exe
+F:\VPL Assignments\stopWatch-CSharp\bin\Debug\stopWatch-CSharp.pdb
+F:\VPL Assignments\stopWatch-CSharp\obj\Debug\stopWatch-CSharp.csprojAssemblyReference.cache
+F:\VPL Assignments\stopWatch-CSharp\obj\Debug\stopWatch_CSharp.Form1.resources
+F:\VPL Assignments\stopWatch-CSharp\obj\Debug\stopWatch_CSharp.Properties.Resources.resources
+F:\VPL Assignments\stopWatch-CSharp\obj\Debug\stopWatch-CSharp.csproj.GenerateResource.cache
+F:\VPL Assignments\stopWatch-CSharp\obj\Debug\stopWatch-CSharp.csproj.CoreCompileInputs.cache
+F:\VPL Assignments\stopWatch-CSharp\obj\Debug\stopWatch-CSharp.exe
+F:\VPL Assignments\stopWatch-CSharp\obj\Debug\stopWatch-CSharp.pdb
